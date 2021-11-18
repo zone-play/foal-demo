@@ -1,5 +1,5 @@
 # foal-demo
-Foal 小马驹，用于创建 Web 应用程序的 Node.js 框架
+Foal 小马驹，用于创建 Web 应用程序的 Node.js 框架，FoalTS 中的每个新项目都使用一个SQLite数据库，因为它不需要任何额外的安装。但是 TypeORM 支持许多其他数据库。为简单起见，本项目中保留这一点。
 
 ## 一、初始化新项目
 
@@ -35,7 +35,7 @@ my-app/
 foal generate entity todo
 ```
 
-2. 打开目录 `todo.entity.ts` 中的 `src/app/entities` 文件并添加 `text` 列
+2. 打开目录 `src/app/entities` 中的 `todo.entity.ts` 文件并添加 `text` 列
 
 ```base
 import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
