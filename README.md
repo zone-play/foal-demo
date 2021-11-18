@@ -35,13 +35,13 @@ npm run develop
 
 # 三、创建 Model
 
-> FoalTS 使用 TypeORM, 其中 `Entity` 是 `TypeORM` 的装饰器修饰的Class
+1. FoalTS 使用 TypeORM, 其中 `Entity` 是 `TypeORM` 的装饰器修饰的Class
 
 ```base
 foal generate entity todo
 ```
 
-> 打开目录 `todo.entity.ts` 中的 `src/app/entities` 文件并添加 `text` 列
+2. 打开目录 `todo.entity.ts` 中的 `src/app/entities` 文件并添加 `text` 列
 
 ```base
 import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
@@ -62,7 +62,7 @@ export class Todo extends BaseEntity {
 
 > 使用数据库软件，或使用`迁移（一种更新数据库架构的编程方式）`。使用迁移的优点是您可以直接从实体定义中创建、更新和删除表。
 
-> 生成迁移文件
+1. 生成迁移文件
 
 ```base
 npm run makemigrations
@@ -88,7 +88,7 @@ export class migration1562755564200 implements MigrationInterface {
 }
 ```
 
-> 运行迁移，TypeORM 检查之前运行过的所有迁移（在本例中没有）并执行新的迁移。
+2. 运行迁移，TypeORM 检查之前运行过的所有迁移（在本例中没有）并执行新的迁移。
 
 ```base
 npm run migrations
