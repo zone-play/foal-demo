@@ -1,12 +1,14 @@
 # foal-demo
 foal小马驹，用于创建Web应用程序的Node.js框架
 
-# 一、创建新项目
+# 一、初始化新项目
 
 ```base
 npm install -g @foal/cli
 
-foal createapp my-app
+foal createapp my-app && cd my-app
+
+npm run develop
 ```
 ### 目录说明
 
@@ -25,15 +27,7 @@ my-app/
   .eslintrc.js    linting 配置。
 ```
 
-# 二、启动服务器
-
-```base
-cd my-app
-
-npm run develop
-```
-
-# 三、创建 Model
+# 二、创建 Model
 
 1. FoalTS 使用 TypeORM, 其中 `Entity` 是 `TypeORM` 的装饰器修饰的Class
 
@@ -58,7 +52,7 @@ export class Todo extends BaseEntity {
 }
 ```
 
-# 四、创建数据库表
+# 三、创建数据库表
 
 > 使用数据库软件，或使用`迁移（一种更新数据库架构的编程方式）`。使用迁移的优点是您可以直接从实体定义中创建、更新和删除表。
 
