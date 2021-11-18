@@ -1,5 +1,5 @@
 # foal-demo
-foal小马驹，用于创建Web应用程序的Node.js框架
+Foal 小马驹，用于创建 Web 应用程序的 Node.js 框架
 
 ## 一、初始化新项目
 
